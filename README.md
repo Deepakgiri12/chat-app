@@ -116,7 +116,7 @@ project-root/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/chat-app.git
+git clone https://github.com/Deepakgiri12/chat-app
 ```
 
 ### Navigate to the project
@@ -150,15 +150,15 @@ Create a `.env` file inside the **server** folder.
 ```env
 PORT=5000
 
-MONGO_URI=your_mongodb_connection_string
+MONGO_URI=mongodb_connection_string
 
-JWT_SECRET=your_jwt_secret
+JWT_SECRET=jwt_secret
 
-CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_CLOUD_NAME=cloud_name
 
-CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_KEY=api_key
 
-CLOUDINARY_API_SECRET=your_api_secret
+CLOUDINARY_API_SECRET=api_secret
 ```
 
 ---
@@ -185,14 +185,17 @@ npm start
 
 Add screenshots here after deployment.
 
-Example:
-
 ```
-Login Page
+### Login Page
+<img width="1918" height="872" alt="image" src="https://github.com/user-attachments/assets/9d4e4716-a63c-4f00-8648-0210a7339ea3" />
 
-Signup Page
 
-Home Screen
+### Signup Page
+<img width="1918" height="873" alt="image" src="https://github.com/user-attachments/assets/863a704c-285a-4ffc-88ae-40c90efe82f1" />
+
+
+### Home Screen
+
 
 Chat Window
 
@@ -231,9 +234,7 @@ Profile Page
 
 **Deepak Giri Goswami**
 
-GitHub: https://github.com/yourusername
-
-LinkedIn: https://linkedin.com/in/yourprofile
+GitHub: https://github.com/Deepakgiri12
 
 Email: goswamideepak99965@gmail.com
 
