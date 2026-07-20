@@ -18,7 +18,7 @@ app.use(express.json({
 const server=require('http').createServer(app);
 
 const io=require('socket.io')(server,{cors:{
-  origin:'http://localhost:3000',
+  origin:'https://chat-app-server-ex04.onrender.com',
   methods:['GET','POST']
 }})
 app.use('/api/auth',authRouter);
