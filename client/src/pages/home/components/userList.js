@@ -89,8 +89,8 @@ function UsersList({searchKey, socket, onlineUser}){
     }
 
     function formatName(user){
-        let fname = user.firstName.at(0).toUpperCase() + user.firstName.slice(1).toLowerCase();
-        let lname = user.lastName?.at(0).toUpperCase() + user.lastName.slice(1).toLowerCase();
+        let fname = user?.firstName?.at(0).toUpperCase() + user?.firstName?.slice(1).toLowerCase();
+        let lname = user?.lastName?.at(0).toUpperCase() + user?.lastName?.slice(1).toLowerCase();
         return fname + ' ' + lname;
     }
 
@@ -143,8 +143,8 @@ function UsersList({searchKey, socket, onlineUser}){
             return allChats;
         }else{
             return allUsers.filter(user => {
-                return user.firstName?.toLowerCase().includes(searchKey?.toLowerCase()) ||
-                    user.lastName?.toLowerCase().includes(searchKey?.toLowerCase());
+                return user?.firstName?.toLowerCase().includes(searchKey?.toLowerCase()) ||
+                    user?.lastName?.toLowerCase().includes(searchKey?.toLowerCase());
             });
         }
     }

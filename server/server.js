@@ -10,17 +10,27 @@ const messageRouter=require("./controllers/messageController");
 
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://chat-app-client-favf.onrender.com",
+    ],
+    credentials: true,
+  })
+);
 app.use(express.json({
   limit:"50MB"
 }));
 
 const server=require('http').createServer(app);
 
-const io=require('socket.io')(server,{cors:{
-  origin:'https://chat-app-client-favf.onrender.com',
-  methods:['GET','POST']
-}})
+const io = require("socket.io")(server, {
+  cors: {
+    origin: "https://chat-app-client-favf.onrender.com",
+    methods: ["GET", "POST"],
+  },
+});
 app.use('/api/auth',authRouter);
 app.use('/api/user',userRouter);
 app.use('/api/chat',chatRouter);

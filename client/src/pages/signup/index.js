@@ -8,8 +8,8 @@ import { showLoader, hideLoader } from "../../redux/loaderSlice";
 function Signup(){
     const dispatch = useDispatch();
     const [user, setUser] = React.useState({
-        firstname: '',
-        lastname: '',
+        firstName: '',
+        lastName: '',
         email: '',
         password: ''
     });

@@ -5,14 +5,14 @@ function Header( {socket }){
     const { user } = useSelector(state => state.userReducer);
     const navigate = useNavigate();
     function getFullname(){
-        let fname = user?.firstName.at(0).toUpperCase() + user?.firstName.slice(1).toLowerCase();
-        let lname = user?.lastName.at(0).toUpperCase() + user?.lastName.slice(1).toLowerCase();
+        let fname = user?.firstName?.at(0).toUpperCase() + user?.firstName?.slice(1).toLowerCase();
+        let lname = user?.lastName?.at(0).toUpperCase() + user?.lastName?.slice(1).toLowerCase();
         return fname + ' ' + lname;
     }
 
     function getInitials(){
-        let f = user?.firstName.toUpperCase()[0];
-        let l = user?.lastName.toUpperCase()[0];
+        let f = user?.firstName?.toUpperCase()[0];
+        let l = user?.lastName?.toUpperCase()[0];
         return f + l;
     }
 
