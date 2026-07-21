@@ -13,8 +13,7 @@ export const loginUser = async (user) => {
     try{
         const response = await axiosInstance.post(url + '/api/auth/login', user);
         return response.data;
-        console.log(response.data);
-console.log(localStorage.getItem("token"));
+        
     }catch(error){
         return error;
     }

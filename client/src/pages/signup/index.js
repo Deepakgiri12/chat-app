@@ -4,8 +4,10 @@ import { signupUser } from './../../apiCalls/auth';
 import { toast } from 'react-hot-toast';
 import { useDispatch } from "react-redux";
 import { showLoader, hideLoader } from "../../redux/loaderSlice";
+import { useNavigate } from "react-router-dom";
 
 function Signup(){
+    const navigate=useNavigate();
     const dispatch = useDispatch();
     const [user, setUser] = React.useState({
         firstName: '',
@@ -24,7 +26,11 @@ function Signup(){
 
             if(response.success){
                 toast.success(response.message);
-            }else{
+                setTimeout(() => {
+                    navigate("/");   // or navigate("/")
+                }, 1000);
+            } 
+            else{
                 toast.error(response.message);
             }
         }catch(err){
@@ -45,11 +51,11 @@ function Signup(){
                 <form onSubmit={ onFormSubmit }>
                     <div className="column">
                         <input type="text" placeholder="First Name" 
-                            value={user.firstname} 
-                            onChange={(e) => setUser({...user, firstname: e.target.value})} />
+                            value={user.firstName} 
+                            onChange={(e) => setUser({...user, firstName: e.target.value})} />
                         <input type="text" placeholder="Last Name" 
-                            value={ user.lastname }
-                            onChange={(e) => setUser({...user, lastname: e.target.value})}/>
+                            value={ user.lastName }
+                            onChange={(e) => setUser({...user, lastName: e.target.value})}/>
                     </div>
                     <input type="email" placeholder="Email" 
                         value={ user.email }

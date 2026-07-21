@@ -6,6 +6,7 @@ import { io } from 'socket.io-client';
 import { useEffect, useState } from "react";
 
 const socket = io('https://chat-app-server-ex04.onrender.com');
+//const socket = io('http://localhost:5000');
 
 function Home(){
     const { selectedChat, user } = useSelector(state => state.userReducer);

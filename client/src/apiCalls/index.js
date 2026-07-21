@@ -11,6 +11,7 @@
 import axios from "axios";
 
 export const url = "https://chat-app-server-ex04.onrender.com";
+//export const url = "http://localhost:5000";
 
 export const axiosInstance = axios.create({
     baseURL: url,
