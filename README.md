@@ -195,11 +195,12 @@ Add screenshots here after deployment.
 
 
 ### Home Screen
+<img width="1918" height="868" alt="image" src="https://github.com/user-attachments/assets/3dcb546a-a6cc-4b62-9d42-f69ac7f7169e" />
 
-
-Chat Window
 
 Profile Page
+<img width="1661" height="526" alt="image" src="https://github.com/user-attachments/assets/6894eaca-602e-427b-a307-84e7c1b00f30" />
+
 ```
 
 ---
