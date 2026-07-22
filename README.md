@@ -180,27 +180,35 @@ npm start
 ```
 
 ---
-
 ## 📸 Screenshots
 
-Add screenshots here after deployment.
+Below are some screenshots of the application after deployment.
 
-```
-### Login Page
-<img width="1918" height="872" alt="image" src="https://github.com/user-attachments/assets/9d4e4716-a63c-4f00-8648-0210a7339ea3" />
+### 🔐 Login Page
+![Login Page](./Screenshots/login.png)
 
+Users can securely log in to their account using their registered email and password.
 
-### Signup Page
-<img width="1918" height="873" alt="image" src="https://github.com/user-attachments/assets/863a704c-285a-4ffc-88ae-40c90efe82f1" />
+---
 
+### 📝 Signup Page
+![Signup Page](./Screenshots/signup.png)
 
-### Home Screen
-<img width="1918" height="868" alt="image" src="https://github.com/user-attachments/assets/3dcb546a-a6cc-4b62-9d42-f69ac7f7169e" />
+New users can create an account by entering their personal details and password.
 
+---
 
-Profile Page
-<img width="1661" height="526" alt="image" src="https://github.com/user-attachments/assets/6894eaca-602e-427b-a307-84e7c1b00f30" />
+### 🏠 Home Screen
+![Home Screen](./Screenshots/home.png)
 
+The home screen displays the main dashboard, where users can access the application's core features.
+
+---
+
+### 👤 Profile Page
+![Profile Page](./Screenshots/profile.png)
+
+The profile page allows users to view and manage their personal information.
 ```
 
 ---
